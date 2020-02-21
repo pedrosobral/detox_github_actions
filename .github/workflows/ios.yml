@@ -49,5 +49,5 @@ jobs:
     - run: brew tap wix/brew
     - run: brew install applesimutils
     - run: yarn e2e:ios:build
-    - run: yarn ios
+    - run: yarn start
     - run: yarn e2e:ios
