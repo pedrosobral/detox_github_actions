@@ -13,12 +13,7 @@ jasmine.getEnv().addReporter(adapter);
 jasmine.getEnv().addReporter(specReporter);
 
 beforeAll(async () => {
-  await detox.init(config, {launchApp: false});
-  await device.launchApp({
-    newInstance: true,
-    launchArgs: {detoxPrintBusyIdleResources: 'YES'},
-  });
-  await device.disableSynchronization();
+  await detox.init(config);
 }, 300000);
 
 beforeEach(async () => {
