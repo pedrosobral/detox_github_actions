@@ -18,6 +18,7 @@ beforeAll(async () => {
     newInstance: true,
     launchArgs: {detoxPrintBusyIdleResources: 'YES'},
   });
+  await device.disableSynchronization();
 }, 300000);
 
 beforeEach(async () => {
