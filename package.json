@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "e2e:ios:build": "detox build",
-    "e2e:ios": "detox test"
+    "e2e:ios": "detox test --loglevel trace"
   },
   "dependencies": {
     "react": "16.9.0",
